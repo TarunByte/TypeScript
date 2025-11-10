@@ -1,6 +1,6 @@
 class Product {
-  name: string;
-  price: number;
+  private name: string;
+  protected price: number;
   pId: number;
   inCart = false;
   isOrdered = false;
@@ -19,10 +19,23 @@ class Product {
   }
 }
 
-var product = new Product("Samsung", 100000, 101);
-product.addToCart();
-console.log(product.buyProduct());
+class Order extends Product {
+  constructor() {
+    super("laptop", 100000, 403);
+  }
 
-var product = new Product("I phone", 200000, 301);
-product.addToCart();
-console.log(product.buyProduct());
+  getPrice() {
+    return this.price;
+  }
+}
+
+var product = new Product("Samsung", 100000, 101);
+// product.addToCart();
+// console.log(product.buyProduct());
+
+// console.log(product.name);
+// console.log(product.price);
+
+var order = new Order();
+
+console.log(order.getPrice());

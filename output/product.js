@@ -21,9 +21,18 @@ class Product {
         }
     }
 }
+class Order extends Product {
+    constructor() {
+        super("laptop", 100000, 403);
+    }
+    getPrice() {
+        return this.price;
+    }
+}
 var product = new Product("Samsung", 100000, 101);
-product.addToCart();
-console.log(product.buyProduct());
-var product = new Product("I phone", 200000, 301);
-product.addToCart();
-console.log(product.buyProduct());
+// product.addToCart();
+// console.log(product.buyProduct());
+// console.log(product.name);
+// console.log(product.price);
+var order = new Order();
+console.log(order.getPrice());
