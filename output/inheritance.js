@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.Auth = void 0;
 class Auth {
     login(name, password) {
         if (name && password) {
@@ -10,6 +11,7 @@ class Auth {
         }
     }
 }
+exports.Auth = Auth;
 class Student extends Auth {
     result(marks) {
         if (marks > 33) {

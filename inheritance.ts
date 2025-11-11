@@ -1,4 +1,4 @@
-class Auth {
+export class Auth {
   login(name: string, password: string) {
     if (name && password) {
       return "Student Login";
