@@ -1,6 +1,23 @@
 "use strict";
 //? In TypeScript, Utility Types are built-in types that help transform or manipulate other types in a convenient way.
 Object.defineProperty(exports, "__esModule", { value: true });
+var CollegeData7 = {
+    name: "iit delhi",
+    location: "delhi",
+    //   students: 1000,
+};
+var APICall = "success";
+APICall = "loading";
+// APICall = "pending";
+var APICall2 = "success";
+APICall2 = "error";
+var randomData = 20;
+var siteRoleOption = "Admin";
+var RoleName = {
+    Admin: "Anil",
+    user: "sidhu",
+    guest: "peter",
+};
 // let CollegeData3: Partial<CollegeType> = {
 //   name: "iit delhi",
 //   location: "delhi",
